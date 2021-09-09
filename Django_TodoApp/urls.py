@@ -20,4 +20,6 @@ from todo import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
+    path('addTodo', views.addTodo),
+    path('update/<int:id>', views.update),
 ]
